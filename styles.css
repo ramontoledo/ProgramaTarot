@@ -81,13 +81,6 @@ body {
     transition: max-height 0.3s ease-in-out, color 0.3s ease;
 }
 
-/* Botões com Bootstrap Classes */
-button {
-    font-size: 18px;
-    padding: 12px 24px;
-    margin-top: 20px;
-}
-
 /* Adicionando Classes do Bootstrap aos Botões */
 .btn {
     cursor: pointer;
@@ -165,3 +158,25 @@ button {
     transform: rotateY(720deg);
     transition: transform 0.5s ease-in-out;
 }
+
+.button-container button {   
+    margin: 0; 
+}
+
+.button-container {
+    align-items: center; 
+    flex-grow: 2;    
+    margin-top: 10px; 
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        align-content: space-between;      
+        gap: 10px;
+    
+}
+
+
